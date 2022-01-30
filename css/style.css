@@ -1,0 +1,71 @@
+:root{
+    --bg-color:#FFFFFF;
+    --primary-text-color:#272727;
+    --accent-text-color:#211381;
+    --btn-and-accent-color: #C9453B;
+    --white-text-color:#FFFFFF;
+    --animation:  500ms cubic-bezier(0.4,0,0.2,1);
+    --mg-size-sm: 576px;
+    --mg-size-md: 768px;
+    --mg-size-lg: 992px;
+    --mg-size-xl: 1200px;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: "YandexSansDisplay";
+  font-style: Light;
+  font-weight: 300;
+  font-display: swap;
+  src: 
+       url("/fonts/YandexSansDisplay-Light.woff2") format("woff2"),
+       url("/fonts/YandexSansDisplay-Light.woff") format("woff"),
+       url("/fonts/YandexSansDisplay-Light.ttf") format("ttf"),
+
+}
+@font-face {
+  font-family: "YandexSansDisplay";
+  font-style: Medium;
+  font-weight: 500;
+  font-display: swap;
+  src: 
+       url("/fonts/YandexSansText-Medium.woff2") format("woff2"),
+       url("/fonts/YandexSansText-Medium.woff") format("woff"),
+       url("/fonts/YandexSansText-Medium.ttf") format("ttf"),
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+}
+a{
+    text-decoration: none;
+}
+p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  --container-width: 100%;
+  width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
