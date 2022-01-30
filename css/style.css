@@ -99,35 +99,40 @@ img {
     width: 32px;
     cursor: pointer;
     position: relative;
+    transition: all var(--animation);
     z-index: 2;
 }
 .burger.is-open .burger__item{
     opacity: 0;
-    transition: 0.5;
+    transition: all var(--animation);
 }
 .burger.is-open::before{
     top: 7px;
     transform: rotate(45deg);
     border-color: var(--accent-text-color);
-    transition: 0.5;
+    transition: all var(--animation);
     z-index: 2;
 }
 .burger.is-open::after{
     bottom: 8px;
     transform: rotate(-45deg);
     border-color: var(--accent-text-color);
+    transition: all var(--animation);
     z-index: 2;
 }
 .burger::before{
 top: 0;
+transition: all var(--animation);
 }
 .burger::after{
     bottom: 0;
+    transition: all var(--animation);
 }
 .burger__item{
     background-color: var(--white-text-color);
     height: 2px;
     width: 100%;
+    transition: all var(--animation);
 }
 .burger::before, .burger::after{
     content: '';
@@ -178,6 +183,40 @@ position: fixed;
   .menu{
       display: none;
   }
+  .menu-mob__list{
+    display: none;
+    top: 0;
+    left: 0;
+}
+.menu-mob__list.is-open{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 90px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  background-color: var(--secondary-text-color);
+  opacity: 0.9;
+  z-index: 1;
+}
+.menu-mob__link{
+        font-family: YandexSansDisplay;
+        font-weight: 500;
+        color: var(--primary-text-color);
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        transition: text-shadow var(--animation);
+    }
+.menu-mob__link:hover{
+        text-shadow: 3px 3px 10px rgb(51, 137, 236), -3px -3px 10px #ff0;
+}
+.menu-mob__item:not(:last-child){
+    margin-bottom: 10px;
+}
 @media (min-width:567px){
     .container{
         --container-width:var(--mg-size-sm);
@@ -235,9 +274,10 @@ position: fixed;
         display: none;
     }
     .menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+    }
+    .menu-mob{
+        display: none;
     }
 }
 

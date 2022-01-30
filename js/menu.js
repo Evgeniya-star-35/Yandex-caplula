@@ -1,5 +1,5 @@
 const [burgerBtn] = document.getElementsByClassName("js-burger");
-const [menu] = document.getElementsByClassName("nav-mobile__list");
+const [menu] = document.getElementsByClassName("menu-mob__list");
 
 const toggleMenu = () => {
   menu.classList.toggle("is-open");
