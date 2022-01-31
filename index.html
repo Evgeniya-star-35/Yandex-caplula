@@ -27,8 +27,8 @@
       <header class="header">
         <div class="container">
           <div class="header-wrapper">
-            <a href="" class="logo"
-              ><img src="./images/Logo.svg" alt="logo" />
+            <a href="/" class="logo"
+              ><img src="./images/icons/Logo.svg" alt="logo" />
             </a>
             <nav class="menu-mob">
               <ul class="menu-mob__list">
@@ -54,9 +54,6 @@
                 </li>
               </ul>
             </nav>
-            <div class="burger js-burger">
-              <span class="burger__item"></span>
-            </div>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -81,18 +78,117 @@
                 </li>
               </ul>
             </nav>
+            <a href="" class="btn btn--header">
+              <span class="btn__text">Забронировать</span>
+              <svg class="btn__icon">
+                <use href="./images/symbol-defs.svg#icon-arroy"></use>
+              </svg>
+            </a>
+            <div class="burger js-burger">
+              <span class="burger__item"></span>
+            </div>
           </div>
         </div>
       </header>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title hero__title--main">
+            Капсула для сна на пару часов
+          </h1>
+          <p class="hero__text">
+            Восстановите силы в комфортном пространстве и станьте продуктивнее.
+          </p>
+          <h2 class="hero__title hero__title--slogan" id="внутри">
+            Капсула — место тишины и покоя
+          </h2>
+        </div>
+      </section>
     </div>
-    <div class="top-wrapper visually-hidden">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRngleks28isWO3d3UmaYFHmabMCKQcpvVdtFXu2BqIS1SZhBuR2L94Xrpugl-UhPU2k0A&usqp=CAU"
-        class="js-top top"
-        alt="button-up"
-      />
-    </div>
+    <section class="about">
+      <div class="container">
+        <div class="thumb">
+          <picture class="picture">
+            <source
+              srcset="
+                ./images/desktop/about/about@1x.webp 1x,
+                ./images/desktop/about/about@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width:1200px) "
+            />
+            <source
+              srcset="
+                ./images/desktop/about/about@1x.png 1x,
+                ./images/desktop/about/about@2x.png 2x
+              "
+              type="image/png"
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/about/about@1x.webp 1x,
+                ./images/tablet/about/about@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width:768px) "
+            />
+            <source
+              srcset="
+                ./images/tablet/about/about@1x.png 1x,
+                ./images/tablet/about/about@2x.png 2x
+              "
+              type="image/png"
+              media="(min-width:768px)"
+            />
+            <img
+              class="img"
+              src="./images/mobile/about/about@1x.png"
+              alt="капсула"
+            />
+          </picture>
+        </div>
+        <p class="about__text">Капсула будет полезна тем, кто:</p>
+        <ul class="about__list">
+          <li class="about__item">
+            <span class="about__element"
+              >плохо себя чувствует и работает менее эффективно из-за
+              постоянного недосыпа;</span
+            >
+          </li>
+          <li class="about__item">
+            <span class="about__element"
+              >любит спать днём по 90 минут, но не может тратить время на
+              поездку домой;</span
+            >
+          </li>
+          <li class="about__item">
+            <span class="about__element"
+              >хочет сосредоточиться на рабочих задачах и отдохнуть от суеты
+              опенспейсов.</span
+            >
+          </li>
+        </ul>
+        <a href="" class="btn btn--about">
+          <span class="btn__text">Забронировать</span>
+          <svg class="btn__icon">
+            <use href="./images/symbol-defs.svg#icon-arroy"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="top-wrapper visually-hidden">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRngleks28isWO3d3UmaYFHmabMCKQcpvVdtFXu2BqIS1SZhBuR2L94Xrpugl-UhPU2k0A&usqp=CAU"
+            class="js-top top"
+            alt="button-up"
+          />
+        </div>
+      </div>
+    </footer>
     <script src="./js/menu.js" async></script>
     <script src="./js/buttonUp.js" async></script>
+    <script src="./js/scroll.js" async></script>
   </body>
 </html>

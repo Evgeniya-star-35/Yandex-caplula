@@ -24,7 +24,7 @@ const clickMenu = (e) => {
   }
 };
 
-const links = document.querySelectorAll(".nav-mobile__link");
+const links = Array.from(document.getElementsByClassName("menu-mob__link"));
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
