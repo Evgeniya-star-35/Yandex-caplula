@@ -30,9 +30,6 @@
       type="text/css"
       href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"
     />
-    <!-- <link rel="stylesheet" href="./css/slick-theme.css" />
-
-    <link rel="stylesheet" href="./css/slick.css" /> -->
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -316,58 +313,83 @@
       ></iframe>
     </section>
     <section class="review">
-      <h2 class="review__title">Что о нас говорят</h2>
-      <div class="slider" id="slider">
-        <div class="slider__point">
-          <div class="slider__photo">
-            <img
-              class="slider__img"
-              srcset="./images/desktop/people/girl/girl@2x.jpg 2x"
-              src="./images/desktop/people/girl/girl@1x.jpg"
-              alt="девушка"
-            />
+      <div class="container">
+        <h2 class="review__title">Что о нас говорят</h2>
+        <div class="slider" id="slider">
+          <div class="slider__point">
+            <div class="slider__wrapper">
+              <div class="slider__photo">
+                <img
+                  class="slider__img"
+                  srcset="./images/desktop/people/girl/girl@2x.jpg 2x"
+                  src="./images/desktop/people/girl/girl@1x.jpg"
+                  alt="девушка"
+                />
+              </div>
+              <div>
+                <h3 class="slider__name">Света Началова</h3>
+                <p class="slider__text">20 января •</p>
+                <p class="slider__place">ст. м. «Улица 1905 года»</p>
+                <p class="slider__comment">
+                  Как же здорово я отдохнула! Спасибо «Капсуле»! У меня совсем
+                  не было сил, а теперь я чувствую себя прекрасно и могу дальше
+                  работать. Ортопедический матрас — космос! Мои спина и шея в
+                  восторге!
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 class="slider__name">Света Началова</h3>
-          <p class="slider__text">20 января • ст. м. «Улица 1905 года»</p>
-          <p class="slider__commet">
-            Как же здорово я отдохнула! Спасибо «Капсуле»! У меня совсем не было
-            сил, а теперь я чувствую себя прекрасно и могу дальше работать.
-            Ортопедический матрас — космос! Мои спина и шея в восторге!
-          </p>
-        </div>
-        <div class="slider__point">
-          <div class="slider__photo">
-            <img
-              class="slider__img"
-              srcset="./images/desktop/people/man/man@2x.jpg 2x"
-              src="./images/desktop/people/man/man@1x.jpg"
-              alt="мужчина"
-            />
+          <div class="slider__point">
+            <div class="slider__wrapper">
+              <div class="slider__photo">
+                <img
+                  class="slider__img"
+                  srcset="./images/desktop/people/man/man@2x.jpg 2x"
+                  src="./images/desktop/people/man/man@1x.jpg"
+                  alt="мужчина"
+                />
+              </div>
+              <div>
+                <h3 class="slider__name">Николай Сергеев</h3>
+                <p class="slider__text">17 января •</p>
+                <p class="slider__place">ст. м. «Павелецкая»</p>
+                <p class="slider__comment">
+                  Я доволен. Забронировал «Капсулу» за минуту — всё чётко и
+                  понятно. И место удобное: близко к метро, минут пять пешком от
+                  «Арбатской». Рекомендую!
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 class="slider__name">Николай Сергеев</h3>
-          <p class="slider__text">17 января • ст. м. «Павелецкая»</p>
-          <p class="slider__commet">
-            Я доволен. Забронировал «Капсулу» за минуту — всё чётко и понятно. И
-            место удобное: близко к метро, минут пять пешком от «Арбатской».
-            Рекомендую!
-          </p>
-        </div>
-        <div class="slider__point">
-          <div class="slider__photo">
-            <img
-              class="slider__img"
-              srcset="./images/desktop/people/man/man@2x.jpg 2x"
-              src="./images/desktop/people/man/man@1x.jpg"
-              alt="мужчина"
-            />
+          <div class="slider__point">
+            <div class="slider__wrapper">
+              <div class="slider__photo">
+                <img
+                  class="slider__img"
+                  srcset="./images/desktop/people/man/man@2x.jpg 2x"
+                  src="./images/desktop/people/man/man@1x.jpg"
+                  alt="мужчина"
+                />
+              </div>
+              <div>
+                <h3 class="slider__name">Антон Сергеев</h3>
+                <p class="slider__text">17 января •</p>
+                <p class="slider__place">ст. м. «Павелецкая»</p>
+                <p class="slider__comment">
+                  Я доволен. Забронировал «Капсулу» за минуту — всё чётко и
+                  понятно. И место удобное: близко к метро, минут пять пешком от
+                  «Арбатской». Рекомендую!
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 class="slider__name">Антон Ежов</h3>
-          <p class="slider__text">17 января • ст. м. «Павелецкая»</p>
-          <p class="slider__commet">
-            Я доволен. Забронировал «Капсулу» за минуту — всё чётко и понятно. И
-            место удобное: близко к метро, минут пять пешком от «Арбатской».
-            Рекомендую!
-          </p>
+          <div class="pagination">
+            <ul class="slick-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -385,12 +407,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <!-- <script src="js/slick.min.js"></script> -->
     <script src="./js/menu.js" async></script>
     <script src="./js/buttonUp.js" async></script>
     <script src="./js/scroll.js" async></script>
     <script src="./js/main.js" async></script>
-
-    <!-- <script src="./js/rewiev.js" async></script> -->
   </body>
 </html>

@@ -419,6 +419,19 @@ margin-bottom: 34px;
   line-height: 35px;
   color: var(--primary-text-color);
 }
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
 @media (min-width:567px){
     .container{
         --container-width:var(--mg-size-sm);
