@@ -732,4 +732,116 @@ transition: 5s;
   min-width: 340px;
 }
 }
+.slider__point {
+    padding: 0 29px;
+}
 
+.slider__photo {
+    justify-content: center;
+    display: flex;
+}
+
+.slider__name {
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 15.42px;
+    color: #747487;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+.slider__text {
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 13px;
+    color: #404048;
+    text-align: center;
+}
+
+
+
+
+
+/* only slick style */
+.slick-arrow {
+    display: none;
+}
+
+.slick-prev, .slick-next {
+    font-size: 25px;
+    color: #404048;
+    top: 60px;
+    z-index: 2;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.slick-prev {
+    left: 30px;
+}
+
+.slick-prev:before {
+    display: none;
+}
+
+.slick-prev:before {
+    display: none;
+}
+
+.slick-next {
+    right: 30px;
+}
+
+.slick-next:before {
+    display: none;
+}
+
+[dir='rtl'] .slick-next:before {
+    display: none;
+}
+
+.slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus {
+    color: #404048;
+    outline: none;
+    background: none;
+    opacity: none;
+}
+
+.slick-prev:hover {
+    left: 27px;
+}
+
+.slick-next:hover {
+    right: 27px;
+}
+
+/* ARROWS END /
+
+/ DOTS */
+
+.slick-dots {
+    bottom: -25px;
+    margin-right: 17px;
+}
+
+.slick-dots li button {
+    width: 11px;
+    height: 11px;
+    padding: 5px;
+    background-color: #bdc5d6;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #8b9ab7;
+}
+
+.slick-dots li button:hover {
+    background-color: #8b9ab7;
+}
+
+.slick-dots li button:before {
+    content: ' ';
+    opacity: 1;
+}
