@@ -732,6 +732,7 @@ transition: 5s;
   min-width: 340px;
 }
 }
+/* ////////////////////// */
 .slider__point {
     padding: 0 29px;
 }
@@ -742,7 +743,6 @@ transition: 5s;
 }
 
 .slider__name {
-    font-family: 'Museo Sans Cyrl 700';
     font-size: 15.42px;
     color: #747487;
     margin-top: 20px;
@@ -751,15 +751,28 @@ transition: 5s;
 }
 
 .slider__text {
-    font-family: 'Museo Sans Cyrl 300';
     font-size: 13px;
     color: #404048;
     text-align: center;
 }
-
-
-
-
+.slick-dots  li{
+  border-radius: 50% !important;
+  color: #000;
+}
+#slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02{
+  content: '';
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: block;
+  background-image: url(../images/icons/slider.svg);
+  background-repeat: no-repeat;
+}
+.slick-arrow{
+  display: flex;
+}
 
 /* only slick style */
 .slick-arrow {
@@ -767,15 +780,12 @@ transition: 5s;
 }
 
 .slick-prev, .slick-next {
-    font-size: 25px;
+    /* font-size: 25px;
     color: #404048;
     top: 60px;
     z-index: 2;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
+    display: none !important;
 }
 
 .slick-prev {
@@ -821,7 +831,7 @@ transition: 5s;
 
 / DOTS */
 
-.slick-dots {
+/* .slick-dots {
     bottom: -25px;
     margin-right: 17px;
 }
@@ -844,4 +854,4 @@ transition: 5s;
 .slick-dots li button:before {
     content: ' ';
     opacity: 1;
-}
+} */
