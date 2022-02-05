@@ -4,10 +4,12 @@ const [menu] = document.getElementsByClassName("menu-mob__list");
 const toggleMenu = () => {
   menu.classList.toggle("is-open");
   burgerBtn.classList.toggle("is-open");
+  document.body.classList.toggle("menu-open");
 };
 const closeMenu = () => {
   menu.classList.remove("is-open");
   burgerBtn.classList.remove("is-open");
+  document.body.classList.toggle("menu-open");
 };
 const openMenu = () => {
   menu.classList.add("is-open");
@@ -16,10 +18,6 @@ const openMenu = () => {
 const clickMenu = (e) => {
   if ((menu.style.display = "none")) {
     menu.style.display = "";
-    e.currentTarget.addEventListener("click", openMenu);
-    e.currentTarget.addEventListener("click", closeMenu);
-    e.currentTarget.removeEventListener("click", openMenu);
-    e.currentTarget.removeEventListener("click", closeMenu);
     e.currentTarget.addEventListener("click", toggleMenu);
   }
 };
